@@ -377,45 +377,56 @@ p {
   }
 }
 .footer {
+  background-color: #000000;
   padding: 3rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-items: center;
   justify-content: space-around;
-  align-items: center;
-  align-content: space-between;
-  color: white;
-  background-color: black;
+}
+.footer__copy {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "ubuntu";
 }
 .footer__list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-between;
-  list-style: none;
-}
-.footer__item {
-  font-size: 0.8rem;
-  margin: 0 20px;
+  display: none;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .footer {
-    flex-flow: column wrap;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: space-between;
+    width: auto;
   }
-  .footer__text {
-    text-align: center;
+  .footer__copy {
+    font-size: 16px;
+    margin-left: 5rem;
   }
   .footer__list {
-    margin-top: 10px;
-    flex-flow: row wrap;
+    margin-left: 9rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    width: 100px;
+    list-style: none;
+    color: #FFFFFF;
   }
-  .footer__item {
-    margin: 15px 10px;
+  .footer__button {
+    background-color: #FFAF6D;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+  .footer__button:hover {
+    background-color: #FFFFFF;
+  }
+  .footer__button:focus {
+    background-color: #FFFFFF;
   }
 }
 .main {
