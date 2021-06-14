@@ -398,6 +398,7 @@ p {
   .footer {
     position: relative;
     background-color: #000000;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -419,14 +420,24 @@ p {
     width: 100px;
     list-style: none;
     color: #FFFFFF;
+    flex-wrap: wrap;
+    margin-block-end: 0;
   }
   .footer__item {
     white-space: nowrap;
+    margin-bottom: 0.8rem;
+    color: #FFFFFF;
+  }
+  .footer__placeholder-mail {
+    border-radius: 20%;
   }
   .footer__button {
     background-color: #FFAF6D;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5px;
+    color: #808080;
+    margin-left: 2.9rem;
+    margin-top: 0.2rem;
   }
   .footer__button:hover {
     background-color: #FFFFFF;

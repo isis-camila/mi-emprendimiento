@@ -22,15 +22,9 @@
 
 @media (max-width:576px){
   .footer{
-    // display: flex;
-    // flex-flow: row wrap;
-    // flex-direction: column;;
-    // justify-content: center;
-    // align-content: space-between;
-    // width: auto;
-    
     position: relative;
     background-color: $black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,11 +36,9 @@
     font-size: $medium;
     margin-top: .7rem;
     margin-bottom: .8rem;
-   
   }
 
-   &__list{
-    
+  &__list{    
     margin-bottom: .5rem;
     display: flex;
     flex-direction: column;
@@ -55,19 +47,27 @@
     width: 100px;
     list-style: none;
     color: $white;
+    flex-wrap: wrap;
+    margin-block-end:0;
    }
 
    &__item{
     white-space: nowrap;
+    margin-bottom: .8rem;
+    color: $white;
    }
-
-
-
+   
+    &__placeholder-mail{
+      border-radius: 20%;
+     
+    }
     &__button{
     background-color: $tangerine;
-    font-size: $x-large;
+    font-size: $large;
     border-radius: 5px;
-
+    color: #808080;
+    margin-left: 2.9rem;
+    margin-top: .2rem;
         &:hover{
         background-color:$white;
         }
@@ -79,57 +79,3 @@
   }
 }
 }
-
-
-
-
-
-
-// //This file is for create your style with relation on space of footer
-// .footer {
-//     padding: 3rem;
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-around;
-//     align-items: center;
-//     align-content: space-between;
-//     color: white;
-//     background-color: black;
-  
-//     &__list {
-//       display: flex;
-//       flex-flow: row wrap;
-//       justify-content: space-around;
-//       align-items: center;
-//       align-content: space-between;
-//       list-style: none;
-      
-//     }
-//     &__item {
-//       font-size: 0.8rem;
-//       margin: 0 20px;
-  
-//     }
-//   }
-  
-//   @media (max-width: 575.98px) {
-//     .footer {
-//       flex-flow: column wrap;
-//       justify-content: center;
-//       align-content: center;
-//       &__text {
-//         text-align: center;
-//       }
-  
-//       &__list {
-//         margin-top: 10px;
-//         flex-flow: row wrap;
-//         justify-content: center;
-//         align-content: center;
-//       }
-//       &__item {
-//         
-//       }
-//     }
-//   }
-  
