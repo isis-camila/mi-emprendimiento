@@ -1,0 +1,154 @@
+.main {
+  display: grid;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+ /*sección izquierda*/
+.cards {
+  width: 100%;
+  // height: 30%;
+  padding: 1rem;
+  // border: 2px dotted #808080;
+
+  &__container {
+    border: 1px $black solid;
+    padding: .9rem;
+    height: 100%;
+  }
+
+  &__left{
+    padding: .8rem;
+    border: 2px dotted #808080;
+  
+  &__img--html {
+    width: 100%;
+    height: auto;
+      // position: relative;
+    }
+  }
+    
+  &__iconos{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: $large;
+  }
+
+  //parte sass
+  
+  .cards__left__img--sass {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    
+    // position: relative;
+    }
+
+  .cards__left{
+      &__body--title{
+        font-family: $font-family-secundary;
+        font-size: $large;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+      }
+
+      &__body--text{
+        font-family: $font-family-secundary;
+        font-size: $x-small;
+        text-align: justify;
+        line-height: 1.4rem;
+        margin-bottom: .6rem;
+        }
+    
+      &__body--tutor{
+        font-family: $font-family-secundary;
+        font-size: $medium;
+        font-weight: bold;
+        margin-bottom: .8rem;
+      }
+    }
+    
+      
+    &__iconos{
+      text-align: justify;
+      }
+    }
+
+    .cards__sass{
+      border: 2px dotted #808080;
+    }
+  
+
+   .cards__right {
+      width: 100%;
+      height: 30%;
+      // border: solid 1px;
+      padding: 1rem;
+  
+    &__logo{
+      // padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__img__web {
+      width: 14rem;
+      height: auto;
+      border-radius: 50%;
+      border: solid 2px;
+    }
+
+    &__subtitle h3{
+      text-align: center;
+      margin:.6rem;
+      font-family: $font-family-secundary;
+    }
+
+    &__iconos{
+      text-align: center;
+    }
+  }
+
+  //sección de abajo de la línea
+  .rightbar {
+    &__figure{
+      text-align: center;
+      padding: .2rem;
+      background-color: grey;
+      margin-bottom: 1rem;
+      color: $white;
+      
+    }
+    &__category__list {
+       list-style-type: circle;
+       margin-left: 1rem;
+      } 
+    
+
+    &__list__item{
+      font-family: $font-family-primary;
+      a{
+        text-decoration: none;
+        color: #632894;
+
+        &:hover{
+          color:$orange;
+      }
+    }
+    }
+
+    &__svg{
+      width: 30%;
+      height: auto;
+      margin: auto;
+  }
+  }
+
+
+
+
+
+
+  
+

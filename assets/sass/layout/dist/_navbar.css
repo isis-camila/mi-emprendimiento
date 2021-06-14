@@ -1,0 +1,17 @@
+.navbar__toggle-icon {
+  display: none;
+}
+.navbar__collapsible {
+  width: auto;
+  height: auto;
+  display: block;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
