@@ -60,7 +60,7 @@ p {
   height: 100%;
   color: #FFFFFF;
   position: absolute;
-  right: 0;
+  right: 2%;
 }
 .navbar__list__item {
   display: flex;
@@ -92,6 +92,7 @@ p {
     display: flex;
     right: 20px;
     top: 25px;
+    color: #FFFFFF;
   }
   .navbar__collapsible {
     display: none;
@@ -118,12 +119,13 @@ p {
     width: 100%;
     height: 50vh;
     display: block;
+    background-color: #000000;
   }
 }
 @media (max-width: 576px) and (min-width: 576px) {
   .navbar .navbar__toggle-chb:checked ~ .navbar__collapsible {
     width: auto;
-    height: auto;
+    height: 60vh;
   }
 }
 .row {
@@ -429,7 +431,7 @@ p {
     color: #FFFFFF;
   }
   .footer__placeholder-mail {
-    border-radius: 20%;
+    border-radius: 30%;
   }
   .footer__button {
     background-color: #FFAF6D;
