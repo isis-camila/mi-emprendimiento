@@ -82,19 +82,21 @@
 
     &__collapsible {
       display: none;
-      max-height: 0;
-      overflow: hidden;
+      // max-height: 0;
+      // overflow: hidden;
     }
     
     &__list {
       list-style: none;
       display: flex;
+      // background-color: $black;
+      // color: $white;
       flex-direction: column;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: left;
       height: 100%;
-      width: 400px;
-      font-size: $xx-large;
+      // width: 400px;
+      // font-size: $x-large;
       font-family: $font-family-secundary;
       font-weight: $font-bold;  
      }
@@ -113,10 +115,13 @@
   // para la funcionalidad del checkbox
   .navbar__toggle-chb:checked ~ .navbar__collapsible {
     width: 100%;
-    max-height: 70vh;
+    height: 50vh;
     display: block;
     background-color: $black;
-    
+    @media (min-width: 576px) {
+      width: auto;
+      height: auto;
+    }
     }
   }
 }

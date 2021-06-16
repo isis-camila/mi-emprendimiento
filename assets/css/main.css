@@ -96,18 +96,14 @@ p {
   }
   .navbar__collapsible {
     display: none;
-    max-height: 0;
-    overflow: hidden;
   }
   .navbar__list {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     height: 100%;
-    width: 400px;
-    font-size: 35px;
     font-family: "ubuntu";
     font-weight: 700;
   }
@@ -122,9 +118,15 @@ p {
   }
   .navbar .navbar__toggle-chb:checked ~ .navbar__collapsible {
     width: 100%;
-    max-height: 70vh;
+    height: 50vh;
     display: block;
     background-color: #000000;
+  }
+}
+@media (max-width: 576px) and (min-width: 576px) {
+  .navbar .navbar__toggle-chb:checked ~ .navbar__collapsible {
+    width: auto;
+    height: auto;
   }
 }
 .row {
